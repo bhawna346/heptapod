@@ -1,22 +1,21 @@
 import numpy as np
 
-# Simulated CMS data stream
-data = np.random.normal(0, 1, 100)
+# Simulated detector data
+data = np.random.normal(50, 5, 100)
 
-# Inject anomaly
-data[50] = 10  
+# Inject anomalies
+data[10] = 100
+data[50] = 120
 
-threshold = 3
+# Calculate Z-score
+mean = np.mean(data)
+std = np.std(data)
 
-def detect_anomalies(data, threshold):
-    anomalies = []
-    for i, value in enumerate(data):
-        if abs(value) > threshold:
-            anomalies.append((i, value))
-    return anomalies
+threshold = 2.5
 
-anomalies = detect_anomalies(data, threshold)
+print("Anomaly Detection Results:\n")
 
-print("Detected Anomalies:")
-for idx, val in anomalies:
-    print(f"Index {idx} -> Value {val}")
+for i, value in enumerate(data):
+    z_score = (value - mean) / std
+    if abs(z_score) > threshold:
+        print(f"Anomaly detected at index {i}: value = {value:.2f}")
