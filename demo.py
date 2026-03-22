@@ -19,3 +19,14 @@ for i, value in enumerate(data):
     z_score = (value - mean) / std
     if abs(z_score) > threshold:
         print(f"Anomaly detected at index {i}: value = {value:.2f}")
+        import matplotlib.pyplot as plt
+
+plt.plot(data, label="Detector Data")
+plt.scatter([10, 50], [data[10], data[50]], color='red', label="Anomalies")
+
+plt.title("Anomaly Detection Visualization")
+plt.xlabel("Index")
+plt.ylabel("Value")
+plt.legend()
+
+plt.show()
