@@ -30,3 +30,10 @@ Detector → Preprocessing → Feature Extraction → ML Model → Alert System
 ## Author
 Bhawna Mittal  
 Bharati Vidyapeeth's College of Engineering, New Delhi
+## 🚀 Demo Implementation
+
+This repository includes a simple anomaly detection system (`demo.py`) that simulates real-time detector data and identifies anomalies using threshold-based detection.
+
+### ▶️ How to run
+```bash
+python demo.py
