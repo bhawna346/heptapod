@@ -27,10 +27,6 @@ Detector → Preprocessing → Feature Extraction → ML Model → Alert System
 - Integration with CMS workflows
 - Advanced deep learning models
 
- ## Author
-Bhawna Mittal  
-Bharati Vidyapeeth's College of Engineering, New Delhi
-
 ## Author
 Bhawna Mittal  
 Bharati Vidyapeeth's College of Engineering, New Delhi
