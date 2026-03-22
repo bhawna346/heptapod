@@ -37,3 +37,6 @@ This repository includes a simple anomaly detection system (`demo.py`) that simu
 ### ▶️ How to run
 ```bash
 python demo.py
+
+### Visualization
+The demo also includes a simple plot to visualize detected anomalies in the data stream.
