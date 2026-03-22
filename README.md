@@ -32,8 +32,7 @@ Bhawna Mittal
 Bharati Vidyapeeth's College of Engineering, New Delhi
 ## 🚀 Demo Implementation
 
-This repository includes a simple anomaly detection system (`demo.py`) that simulates real-time detector data and identifies anomalies using threshold-based detection.
-
+This repository includes a simple anomaly detection system (`demo.py`) that simulates real-time detector data and identifies anomalies using a statistical Z-score method.
 ### ▶️ How to run
 ```bash
 python demo.py
